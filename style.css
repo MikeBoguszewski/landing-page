@@ -1,14 +1,17 @@
 body {
-    font-family: "Roboto";
     display: flex;
     flex-direction: column;
     margin: 0;
 }
 
+* {
+    font-family: "Roboto";
+}
+
 .hero {
     background-color: #1f2937;
     display: flex;
-    padding: 100px;
+    padding: 75px;
 }
 
 .header {
@@ -56,6 +59,7 @@ ul {
     flex-basis: 500px;
     background-color: gray;
     color: white;
+    flex-shrink: 0;
 }
 
 .hero-text {
@@ -70,7 +74,7 @@ ul {
     gap: 50px;
 }
 
-button {
+.sign-up {
     background-color: #3882f6;
     border-radius: 5px;
     width: 100px;
@@ -106,6 +110,59 @@ button {
 .info-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 50px;
+    padding: 15px;
+}
 
+.quote-container {
+    display: flex;
+    background-color: #e5e7eb;
+    padding: 25px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    color: #1f2937;
+    max-width: 800px;
+    align-self: center
+}
+
+.name {
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+.call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-to-action-container {
+    background-color: #3882f6;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin: 45px;
+    align-items: center;
+    width: 700px;
+    border-radius: 10px;
+}
+
+.sign-up.bottom {
+    border: solid white;
+    margin-right: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
 }
